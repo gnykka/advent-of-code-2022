@@ -37,6 +37,7 @@ for motion in motions:
 
     neighbouring = are_neighbours(head, tail)
 
+    # trick: tail is always at the head's previous position
     if not neighbouring:
       tail = prev_head
       tail_str = f"{int(tail['x'])}_{int(tail['y'])}"
